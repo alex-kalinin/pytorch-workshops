@@ -12,17 +12,17 @@ If you don’t have your own sets, no worries, the instructor will give you a pr
 1. Create an account at https://kaggle.com/.
 1. Install the Conda package manager locally: [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html).
 1. You may need to add the following environment variables:
-	a. `export MINICONDA3_HOME=/$USER/miniconda3`
-	b. `export PATH=$MINICONDA3_HOME/bin:$PATH`
+    1. `export MINICONDA3_HOME=/$USER/miniconda3`
+    1. `export PATH=$MINICONDA3_HOME/bin:$PATH`
 1. Create and configure your local conda environment:
-    a. `conda create -n py36_torch python=3.6`
-	b. `source activate py36_torch`
-	c. `conda install -y numpy scikit-learn pillow matplotlib jupyter`
-	d. `conda install -c pytorch -y pytorch torchvision`
-	e. `pip install ml2rt redisai python-twitter`
+    1. `conda create -n py36_torch python=3.6`
+    1. `source activate py36_torch`
+    1. `conda install -y numpy scikit-learn pillow matplotlib jupyter`
+    1. `conda install -c pytorch -y pytorch torchvision`
+    1. `pip install ml2rt redisai python-twitter`
 1. Install docker, [https://www.docker.com/get-started](https://www.docker.com/get-started).
 1. Once docker is installed, run the following command line. It should start the Redis AI docker. It should say something like “Ready to accept connections” at the end of the init phase. If it does, everything is good.
-	a. docker run -p 6379:6379 -it --rm redisai/redisai
+    1. docker run -p 6379:6379 -it --rm redisai/redisai
 1. All set!
 
 ### Notebooks 
